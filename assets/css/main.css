@@ -45,12 +45,21 @@
 }
 
 .accent-background {
-  --background-color: #222645;
+  --background-color: #F8F4FC;
   --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --heading-color: #ffffff; 
   --accent-color: #ffffff;
   --surface-color: #00b6a1;
   --contrast-color: #ffffff;
+}
+
+.footer-background{
+    --background-color: #222645;
+    --default-color: #ffffff;
+    --heading-color: #ffffff; 
+    --accent-color: #ffffff;
+    --surface-color: #00b6a1;
+    --contrast-color: #ffffff;
 }
 
 /* regis */
@@ -429,6 +438,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   --background-color: #222645;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
   --heading-color: #ffffff;
   color: var(--default-color);
   transition: all 0.5s;
@@ -1099,21 +1109,22 @@ section,
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: #008374;
 }
 
 .hero h2 .accent {
-  color: var(--conrast-color);
+  color: #222645;
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  color: #222645;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
 .hero .btn-get-started {
-  color: var(--contrast-color);
-  background: var(--accent-color);
+  color: white; 
+  background: #222645;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 14px;
@@ -1122,12 +1133,13 @@ section,
   padding: 14px 40px;
   border-radius: 50px;
   transition: 0.3s;
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  background-color: color-mix(in srgb, var(--default-color), transparent 90%);
+  border: 2px solid #222645; /* Border biru */
+  background-color: #222645;
 }
 
 .hero .btn-get-started:hover {
   border-color: color-mix(in srgb, var(--default-color), transparent 60%);
+  background-color: #00b6a1;
 }
 
 .hero .btn-watch-video {
@@ -1135,11 +1147,11 @@ section,
   transition: 0.5s;
   margin-left: 25px;
   font-weight: 600;
-  color: var(--default-color);
+  color: #60636d;
 }
 
 .hero .btn-watch-video i {
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: #60636d;
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
@@ -1147,7 +1159,7 @@ section,
 }
 
 .hero .btn-watch-video:hover i {
-  color: var(--default-color);
+  color: #222645;
 }
 
 @media (max-width: 640px) {
@@ -1164,6 +1176,7 @@ section,
 .hero .icon-boxes {
   padding-bottom: 60px;
   z-index: 4;
+  background-color: #F8F4FC;
 }
 
 @media (min-width: 1200px) {
@@ -1183,7 +1196,7 @@ section,
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: var(--background-color);
+  background: #222645;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
@@ -1218,10 +1231,12 @@ section,
   background-color: color-mix(in srgb, var(--background-color), white 10%);
 }
 
-.hero .icon-box:hover .title a,
+.hero .icon-box:hover .title,
 .hero .icon-box:hover .icon {
-  color: var(--contrast-color);
+  color: #008374; /* Ubah warna menjadi biru saat di-hover */
 }
+
+
 
 /*--------------------------------------------------------------
 # About Section
@@ -1470,7 +1485,7 @@ section,
 .services .service-item {
   background-color: var(--surface-color);
   padding: 40px;
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.6);
   height: 100%;
 }
 
@@ -1548,7 +1563,7 @@ section,
 --------------------------------------------------------------*/
 .testimonials .testimonial-item {
   background-color: var(--surface-color);
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.3);
   box-sizing: content-box;
   padding: 30px;
   margin: 30px 15px;
@@ -1738,7 +1753,7 @@ section,
 --------------------------------------------------------------*/
 .team .member {
   background-color: var(--surface-color);
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.2);
   text-align: center;
   border-radius: 15px;
   padding: 15px;
